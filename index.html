@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThaniyamHub | Premium Millets Online Store</title>
+    <!-- Add SEO Meta tags -->
+    <meta name="description" content="ThaniyamHub is your premium online store for high-quality, organic millets. Discover health with our curated selection of bajra, ragi, and more.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-seedling"></i> ThaniyamHub
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop Millets</a>
+                <a href="cart.html" style="position: relative;">
+                    <i class="fa-solid fa-cart-shopping"></i> Cart
+                    <span id="cart-count" style="display: none; position: absolute; top: -8px; right: -12px; background: var(--error); color: white; border-radius: 50%; padding: 2px 6px; font-size: 0.7rem; font-weight: bold;">0</span>
+                </a>
+                <div id="auth-links" style="display: flex; align-items: center; gap: 1rem;">
+                    <!-- Auth links will be populated by main.js -->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="container">
+            <div class="hero animate-fade-in">
+                <div class="hero-content">
+                    <h1>Embrace the Power of Ancient Grains</h1>
+                    <p>Discover our premium selection of organically grown, highly nutritious millets. Perfect for a healthy, sustainable lifestyle.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center;">
+                        <a href="products.html" class="btn btn-primary">
+                            Shop Now <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+                <!-- Abstract decorative shapes -->
+                <div style="position: absolute; width: 300px; height: 300px; background: rgba(47, 158, 68, 0.1); border-radius: 50%; top: -50px; right: -50px; filter: blur(40px);"></div>
+                <div style="position: absolute; width: 400px; height: 400px; background: rgba(255, 255, 255, 0.4); border-radius: 50%; bottom: -100px; left: -100px; filter: blur(50px);"></div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
+            <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 3rem;">Why Choose Millets?</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div style="background: white; padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); text-align: center; border: 1px solid var(--border-color); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)';">
+                    <i class="fa-solid fa-heart-pulse" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Nutrient Dense</h3>
+                    <p style="color: var(--text-muted);">Packed with proteins, dietary fiber, B vitamins, calcium, iron, and potassium.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); text-align: center; border: 1px solid var(--border-color); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)';">
+                    <i class="fa-solid fa-leaf" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">100% Organic</h3>
+                    <p style="color: var(--text-muted);">Sourced directly from farmers practicing sustainable and chemical-free agriculture.</p>
+                </div>
+                <div style="background: white; padding: 2rem; border-radius: var(--border-radius-lg); box-shadow: var(--shadow-sm); text-align: center; border: 1px solid var(--border-color); transition: var(--transition-normal);" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='var(--shadow-md)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='var(--shadow-sm)';">
+                    <i class="fa-solid fa-wheat-awn-circle-exclamation" style="font-size: 3rem; color: var(--primary-color); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">Gluten-Free</h3>
+                    <p style="color: var(--text-muted);">Naturally gluten-free making them ideal for those with celiac disease or gluten sensitivity.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background: white; border-top: 1px solid var(--border-color); padding: 3rem 0; margin-top: auto;">
+        <div class="container" style="text-align: center; color: var(--text-muted);">
+            <p>&copy; 2026 ThaniyamHub. Designed with <i class="fa-solid fa-heart" style="color: var(--error);"></i> for your health.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
